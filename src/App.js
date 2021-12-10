@@ -1,23 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import { ReactComponent as WorkIcon } from "./work.svg";
+import timelineContent from './dataContents';
+import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+
 
 function App() {
+
+  let workIconStyles = {background:"#03b989"}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="title">Work Experience</h1>
+      <VerticalTimeline>
+        {
+          timelineContent.map( (element) => {
+            return (
+              <VerticalTimelineElement
+               key={element.key}
+               date={element.date}
+               dateClassName="date"
+               iconStyle={workIconStyles}
+               icon={<WorkIcon />}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  {element.title}
+                </h3>
+                <h5 className="vertical-timeline-element-subtitle">
+                  {element.location}
+                </h5>
+                <p id="description">
+                  {element.description}
+                </p>
+              </VerticalTimelineElement>
+            )
+          })
+        }
+      </VerticalTimeline>
     </div>
   );
 }
