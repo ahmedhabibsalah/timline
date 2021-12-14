@@ -3,31 +3,3 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
-
-.title {
-  font-size: 5em;
-  text-align: center;
-  font-family: "Bebas Neue", sans-serif;
-  color: #06d6a0;
-}
-
-h3 {
-  padding-top: 0.25em;
-}
-h5 {
-  color: #03b989;
-}
-
-.vertical-timeline-element-content {
-  box-shadow: 0 0.25em 0.5em 0 rgba(119, 117, 117, 0.25),
-    0 0.4em 1.25em 0 rgba(80, 79, 79, 0.15) !important;
-  padding: 2em 3em !important;
-}
-
-.date {
-  color: #03b989;
-}
-
-#description {
-  margin: 1.5em 0 2em 0;
-}

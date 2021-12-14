@@ -1,0 +1,20 @@
+h3 {
+  padding-top: 0.25em;
+}
+.edu {
+  color: #f9c74f !important;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(119, 117, 117, 0.25),
+    0 0.4em 1.25em 0 rgba(80, 79, 79, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.dateEdu {
+  color: #f9c74f !important;
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+}

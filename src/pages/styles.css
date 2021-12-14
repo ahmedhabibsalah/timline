@@ -1,0 +1,59 @@
+.title {
+  font-size: 5em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#expTxt {
+  color: #06d6a0;
+}
+
+#slash {
+  color: #f9c74f;
+  position: relative;
+  font-size: 80px;
+  display: inline-block;
+}
+#slash::before {
+  content: attr(attribute);
+
+  color: #06d6a0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  overflow: hidden;
+}
+#eduTxt {
+  color: #f9c74f;
+}
+
+.btnwrap {
+  text-align: center;
+  justify-content: space-between;
+}
+
+button {
+  font-size: 2em;
+  border-radius: 25px;
+  border: 6px transparent;
+  box-shadow: 3px transparent;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  cursor: pointer;
+}
+button:hover {
+  scale: calc(11);
+}
+
+#exp {
+  background: #06d6a0;
+  color: #232931;
+  margin-right: 6%;
+}
+
+#edu {
+  background: #f9c74f;
+  color: #232931;
+}
